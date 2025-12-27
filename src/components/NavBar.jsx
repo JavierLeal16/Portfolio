@@ -2,13 +2,25 @@ import React from 'react';
 
 function NavBar() {
   return (
-    <div id='navBar'>
-      <a href='#'>Home</a>
-      <a href='#'>About</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Contact</a>
-      <a href='#'>Resume</a>
-    </div>
+    <nav id='navBar'>
+      <ul>
+        <li>
+          <a href='#'>Home</a>
+        </li>
+        <li>
+          <a href='#'>About</a>
+        </li>
+        <li>
+          <a href='#'>Projects</a>
+        </li>
+        <li>
+          <a href='#'>Contact</a>
+        </li>
+        <li>
+          <a href='#'>Resume</a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

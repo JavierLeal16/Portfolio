@@ -3,31 +3,67 @@ body {
 }
 
 #navBar {
-  height: 5em;
+  display: flex;
+  min-height: 4em;
   width: 100%;
   top: 0;
-  position: fixed;
+  position: sticky;
   background-color: #111;
   overflow-x: hidden;
+  justify-content: center;
+}
+
+#navBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #navBar a {
-  padding: 10px 15px;
+  padding: 0.5em 0.2em;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #818181;
   display: block;
   transition: 0.3s;
+  position: relative;
 }
 
-#navBar a:hover {
-  color: #f1f1f1;
+#navBar li {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(27, 211, 140);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+#navBar li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+#navBar li a:hover::after,
+#navBar li a:focus::after {
+  transform: scale(1);
 }
 
 header {
-  margin-top: 5em;
+  margin: 5em 0;
 }
 
 header,

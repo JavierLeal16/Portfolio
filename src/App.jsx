@@ -8,10 +8,10 @@ import articles from './data/dummyArticles.js';
 function App() {
   return (
     <div className='App'>
-      <NavBar />
       <Header />
+      <NavBar />
       <main>
-        {articles.map((_, i) => (
+        {Array.from({ length: 20 }).map((_, i) => (
           <Article key={i} />
         ))}
       </main>
