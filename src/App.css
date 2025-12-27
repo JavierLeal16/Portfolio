@@ -17,19 +17,24 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: inherit;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: inherit;
 }
 
 #navBar a {
   padding: 0.5em 0.2em;
   text-decoration: none;
   font-size: 1.5em;
-  color: #818181;
+  color: #cfcfcf;
   display: block;
   transition: 0.3s;
   position: relative;
+}
+
+#navBar a:hover,
+#navBar a:focus {
+  color: rgb(27, 211, 140);
 }
 
 #navBar li {
