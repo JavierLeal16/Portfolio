@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 35px;
+}
+
 #navBar {
   height: 5em;
   width: 100%;
@@ -24,10 +30,6 @@ body {
 
 #navBar a:hover {
   color: #f1f1f1;
-}
-
-header {
-  margin-top: 5em;
 }
 
 header,
