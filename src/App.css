@@ -38,10 +38,15 @@ body {
 }
 
 #navBar li {
-  margin: 0 2rem;
+  padding: 0 2em;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+
+#navBar li:hover {
+  background-color: rgba(78, 78, 78, 0.562);
 }
 
 #navBar a::after {
