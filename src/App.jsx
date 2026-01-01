@@ -8,8 +8,8 @@ import articles from './data/dummyArticles.js';
 function App() {
   return (
     <div className='App'>
-      <NavBar />
       <Header />
+      <NavBar />
       <main>
         {articles.map((_, i) => (
           <Article key={i} />
