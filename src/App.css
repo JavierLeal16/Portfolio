@@ -4,13 +4,26 @@ body {
 
 #navBar {
   display: flex;
-  min-height: 4em;
-  width: 100%;
+  width: 95vw;
+  min-height: 3em;
   top: 0;
   position: sticky;
   background-color: #111;
   overflow-x: hidden;
+  justify-content: space-between;
+  padding: 0 2.5vw;
+}
+
+#logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(27, 211, 140);
+  text-shadow: rgb(27, 211, 140);
+  letter-spacing: 2px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #navBar ul {
@@ -22,11 +35,23 @@ body {
   justify-content: inherit;
 }
 
+#navBar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  color: #cfcfcf;
+}
+
+#navBar li:hover {
+  background-color: rgba(78, 78, 78, 0.562);
+}
+
 #navBar a {
-  padding: 0.5em 0.2em;
+  margin: 0 2em;
   text-decoration: none;
   font-size: 1.2em;
-  color: #cfcfcf;
+  color: inherit;
   display: block;
   transition: 0.3s;
   position: relative;
@@ -35,18 +60,6 @@ body {
 #navBar a:hover,
 #navBar a:focus {
   color: rgb(27, 211, 140);
-}
-
-#navBar li {
-  padding: 0 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-#navBar li:hover {
-  background-color: rgba(78, 78, 78, 0.562);
 }
 
 #navBar a::after {
@@ -59,16 +72,13 @@ body {
   background-color: rgb(27, 211, 140);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-}
-
-#navBar li a::after {
-  opacity: 1;
   transform: scale(0);
   transform-origin: center;
 }
 
-#navBar li a:hover::after,
-#navBar li a:focus::after {
+#navBar li a:focus::after,
+#navBar li a:hover::after {
+  opacity: 1;
   transform: scale(1);
 }
 
