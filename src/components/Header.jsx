@@ -1,16 +1,34 @@
 import React from 'react';
+import { GridScan } from './GridScan';
 
 function Header() {
   return (
     <header>
-      <h1>My App</h1>
-      <p>Welcome to my app!</p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea debitis
-        tempora voluptatem nulla consequuntur est omnis laudantium quia
-        expedita? Aut asperiores totam ad ab nihil, in vero tempora corporis
-        reprehenderit!
-      </p>
+      <div id='gridContainer'>
+        <GridScan
+          sensitivity={0.1}
+          lineThickness={0.5}
+          linesColor='#392e4e'
+          gridScale={0.1}
+          scanColor='#1bd38c'
+          scanOpacity={0.4}
+          enablePost
+          bloomIntensity={0.6}
+          chromaticAberration={0.002}
+          noiseIntensity={0.01}
+          lineJitter={0}
+          scanDirection='backward'
+          scanDuration={5}
+        />
+        <div id='headerTitle'>
+          <h1>Javier Leal</h1>
+          <h3>Web Developer</h3>
+          <p>
+            Welcome to my portfolio! Explore my projects and skills in web
+            development.
+          </p>
+        </div>
+      </div>
     </header>
   );
 }
