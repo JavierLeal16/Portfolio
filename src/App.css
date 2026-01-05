@@ -1,26 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 body {
   margin: 0;
+  font-family: 'source sans pro';
 }
 
-header {
-  background-color: #f1f1f1;
+header #gridContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: hsl(109, 0%, 9%);
+}
+
+header #headerTitle {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  font-size: 35px;
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header #headerTitle * {
+  padding: 0 3em;
 }
 
 #navBar {
-  display: flex;
-  width: 95vw;
-  min-height: 3em;
+  width: 100%;
   top: 0;
   position: sticky;
   background-color: #111;
+}
+
+#navBar-container {
+  min-height: 4em;
+  display: flex;
   overflow-x: hidden;
   justify-content: space-between;
-  padding: 0 2.5vw;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 #logo {
+  margin-left: 3vw;
   font-size: 2rem;
   font-weight: 800;
   color: rgb(27, 211, 140);
@@ -49,12 +77,8 @@ header {
   color: #cfcfcf;
 }
 
-#navBar li:hover {
-  background-color: rgba(78, 78, 78, 0.562);
-}
-
 #navBar a {
-  margin: 0 2em;
+  margin-left: 2em;
   text-decoration: none;
   font-size: 1.2em;
   color: inherit;
@@ -71,12 +95,12 @@ header {
 #navBar a::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -20%;
   left: 0;
   width: 100%;
   height: 0.1em;
   background-color: rgb(27, 211, 140);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 300ms, transform 300ms;
   transform: scale(0);
   transform-origin: center;
@@ -84,15 +108,5 @@ header {
 
 #navBar li a:focus::after,
 #navBar li a:hover::after {
-  opacity: 1;
   transform: scale(1);
-}
-
-header {
-  margin: 5em 0;
-}
-
-header,
-main {
-  padding: 10px;
 }
