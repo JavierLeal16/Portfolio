@@ -110,3 +110,32 @@ header #headerTitle * {
 #navBar li a:hover::after {
   transform: scale(1);
 }
+
+#aboutMe {
+  max-width: 950px;
+  margin: 4em auto;
+  padding: 0 2em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #333;
+  text-align: center;
+}
+
+#aboutMe h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#aboutMe h2::after {
+  content: '';
+  display: block;
+  width: 5em;
+  height: 0.2em;
+  background-color: rgb(27, 211, 140);
+  margin: 0.5em auto 0 auto;
+  border-radius: 0.1em;
+}
+
+#aboutMe p strong {
+  color: hsl(157, 77%, 25%);
+}
