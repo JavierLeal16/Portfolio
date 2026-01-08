@@ -137,5 +137,6 @@ header #headerTitle * {
 }
 
 #aboutMe p strong {
-  color: hsl(157, 77%, 25%);
+  color: hsl(157, 77%, 35%);
+  /* text-shadow: 2px 2px 16px rgb(27, 211, 140); */
 }
