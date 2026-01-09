@@ -140,3 +140,9 @@ header #headerTitle * {
   color: hsl(157, 77%, 35%);
   /* text-shadow: 2px 2px 16px rgb(27, 211, 140); */
 }
+
+#education {
+  margin-top: 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+}

@@ -14,6 +14,13 @@ function AboutMe() {
         trends, learning new design patterns and programming languages.{' '}
         <strong>Let's build something amazing together!</strong>
       </p>
+
+      <div id='education'>
+        <h3>Education</h3>
+        Bachelor's Degree in Computer Engineering - Fermín Toro University
+        (Lara, Venezuela) <br />
+        2016 - 2021
+      </div>
     </section>
   );
 }
