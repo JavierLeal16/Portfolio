@@ -113,9 +113,9 @@ header #headerTitle * {
 
 #aboutMe {
   max-width: 950px;
-  margin: 4em auto;
+  margin: 8em auto;
   padding: 0 2em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.6em;
   color: #333;
   text-align: center;
@@ -129,10 +129,10 @@ header #headerTitle * {
 #aboutMe h2::after {
   content: '';
   display: block;
-  width: 5em;
-  height: 0.2em;
+  width: 3em;
+  height: 0.1em;
   background-color: rgb(27, 211, 140);
-  margin: 0.5em auto 0 auto;
+  margin: 0.2em auto 0 auto;
   border-radius: 0.1em;
 }
 
@@ -142,7 +142,13 @@ header #headerTitle * {
 }
 
 #education {
-  margin-top: 2em;
+  border-bottom: rgb(27, 211, 140) 6px solid;
+  border-left: rgb(27, 211, 140) 5px solid;
+  background-color: hsl(0, 0%, 97%);
+  padding: 1em;
+  max-width: 800px;
+  margin: 2em auto;
+  border-radius: 0.5em;
   font-size: 1.1em;
   font-weight: 600;
 }

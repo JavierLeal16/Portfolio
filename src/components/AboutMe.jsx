@@ -8,10 +8,11 @@ function AboutMe() {
         Hello! I'm Javier Leal, a passionate Web Developer with a knack for
         creating dynamic and responsive web applications. With a strong
         foundation in both front-end and back-end technologies, I thrive on
-        transforming ideas into functional digital experiences. I as a
-        professional, I strive for excellence and to deliver well-built and
-        efficient solutions. Whenever I'm not coding, I love exploring new tech
-        trends, learning new design patterns and programming languages.{' '}
+        transforming ideas into functional digital experiences. As a
+        professional, I aim for excellence and strive to deliver well-built and
+        efficient solutions.
+      </p>
+      <p>
         <strong>Let's build something amazing together!</strong>
       </p>
 
