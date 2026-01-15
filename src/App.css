@@ -36,6 +36,7 @@ header #headerTitle * {
   top: 0;
   position: sticky;
   background-color: #111;
+  z-index: 10000;
 }
 
 #navBar-container {
@@ -109,4 +110,14 @@ header #headerTitle * {
 #navBar li a:focus::after,
 #navBar li a:hover::after {
   transform: scale(1);
+}
+
+#projectReel {
+  max-width: 80%;
+  margin: 4em auto;
+}
+
+#projectReel h2 {
+  text-align: center;
+  margin-bottom: 1em;
 }
