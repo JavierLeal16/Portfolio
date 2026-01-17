@@ -112,12 +112,47 @@ header #headerTitle * {
   transform: scale(1);
 }
 
-#projectReel {
-  max-width: 80%;
-  margin: 4em auto;
-}
-
-#projectReel h2 {
+#projectReel h2,
+#projectReel h3 {
   text-align: center;
   margin-bottom: 1em;
+}
+
+.slick-list {
+  max-width: 90%;
+  margin: 4em auto;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e2e2e2;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 1em;
+}
+
+.project-card img {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
 }
