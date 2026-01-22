@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'source sans pro';
+  /* font-family: 'sans-serif', Arial, sans-serif; */
+  font-family: 'Saira', sans-serif;
 }
 
 header #gridContainer {
@@ -31,11 +33,18 @@ header #headerTitle * {
   padding: 0 3em;
 }
 
+header #headerTitle h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: 1000;
+}
+
 #navBar {
   width: 100%;
   top: 0;
   position: sticky;
   background-color: #111;
+  z-index: 10000;
 }
 
 #navBar-container {
@@ -153,4 +162,53 @@ header #headerTitle * {
   border-radius: 0.5em;
   font-size: 1.1em;
   font-weight: 600;
+}
+
+#projectReel {
+  padding: 4em 0;
+}
+
+#projectReel h2,
+#projectReel h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.slick-list {
+  max-width: 90%;
+  margin: 4em auto;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e2e2e2;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 1em;
+}
+
+.project-card img {
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
 }
