@@ -101,7 +101,9 @@ header #headerTitle * {
   height: 0.1em;
   background-color: rgb(27, 211, 140);
   opacity: 1;
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
   transform: scale(0);
   transform-origin: center;
 }
@@ -113,7 +115,7 @@ header #headerTitle * {
 
 #aboutMe {
   max-width: 950px;
-  margin: 8em auto;
+  margin: 6em auto;
   padding: 0 2em;
   font-size: 1.5em;
   line-height: 1.6em;
