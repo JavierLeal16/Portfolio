@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'source sans pro';
+  /* font-family: 'sans-serif', Arial, sans-serif; */
+  font-family: 'Saira', sans-serif;
 }
 
 header #gridContainer {
@@ -29,6 +31,12 @@ header #headerTitle {
 
 header #headerTitle * {
   padding: 0 3em;
+}
+
+header #headerTitle h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: 1000;
 }
 
 #navBar {
@@ -102,7 +110,9 @@ header #headerTitle * {
   height: 0.1em;
   background-color: rgb(27, 211, 140);
   opacity: 1;
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
   transform: scale(0);
   transform-origin: center;
 }
@@ -110,6 +120,10 @@ header #headerTitle * {
 #navBar li a:focus::after,
 #navBar li a:hover::after {
   transform: scale(1);
+}
+
+#projectReel {
+  padding: 4em 0;
 }
 
 #projectReel h2,
@@ -142,7 +156,7 @@ header #headerTitle * {
 }
 
 .project-card img {
-  max-width: 100%;
+  max-width: 60%;
   margin: 0 auto;
   border-radius: 4px;
   margin-bottom: 1em;

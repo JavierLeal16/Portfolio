@@ -18,9 +18,7 @@ function ProjectReel() {
   return (
     <section id='projectReel'>
       <h2>Project Reel</h2>
-      <h3>
-        <strong>Take a look at my projects!</strong>
-      </h3>
+      <h3>Take a look at my projects!</h3>
       <div className='sliderContainer'>
         <Slider {...sliderSettings}>
           {projectsData.map((project, index) => (
