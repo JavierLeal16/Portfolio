@@ -124,7 +124,7 @@ header #headerTitle h1 {
 
 #aboutMe {
   max-width: 950px;
-  margin: 6em auto;
+  margin: 2em auto;
   padding: 0 2em;
   font-size: 1.5em;
   line-height: 1.6em;
@@ -132,12 +132,12 @@ header #headerTitle h1 {
   text-align: center;
 }
 
-#aboutMe h2 {
+h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-#aboutMe h2::after {
+h2::after {
   content: '';
   display: block;
   width: 3em;
@@ -165,7 +165,11 @@ header #headerTitle h1 {
 }
 
 #projectReel {
-  padding: 4em 0;
+  padding: 2em 0;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: #333;
+  text-align: center;
 }
 
 #projectReel h2,
